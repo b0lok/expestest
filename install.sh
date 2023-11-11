@@ -159,8 +159,8 @@ main() {
   killall cfprefsd
 
   echo -e "$CHECK_MARK Installing Roblox..."
-  cp "$HOME/hydrogen_unzip/Hydrogen.app/Contents/Resources/libHydrogenLoader.dylib" "/Applications/Roblox.app/Contents/MacOS/Roblox.app/Contents/MacOS/libHydrogenLoader.dylib"
-  "$HOME/hydrogen_unzip/Hydrogen.app/Contents/Resources/insert_dylib" --strip-codesig --all-yes "/Applications/Roblox.app/Contents/MacOS/Roblox.app/Contents/MacOS/libHydrogenLoader.dylib" "/Applications/Roblox.app/Contents/MacOS/Roblox.app/Contents/MacOS/Roblox" "/Applications/Roblox.app/Contents/MacOS/Roblox.app/Contents/MacOS/Roblox" >/dev/null 2>&1
+  cp 
+  "$HOME/hydrogen_unzip/Hydrogen.app/Contents/Resources/insert_dylib" --strip-codesig --all-yes "/Applications/Roblox.app/Contents/MacOS/Roblox.app/Contents/MacOS/Roblox" "/Applications/Roblox.app/Contents/MacOS/Roblox.app/Contents/MacOS/Roblox" >/dev/null 2>&1
   /Applications/Roblox.app/Contents/MacOS/Roblox.app/Contents/MacOS/Roblox -force
 
   rm -rf /Applications/Roblox.app/Contents/MacOS/Roblox.app/Contents/_CodeSignature
@@ -172,13 +172,12 @@ main() {
   rm -f "$HOME/Library/Preferences/com.roblox.RobloxPlayerChannel.plist"
   killall cfprefsd
 
-  cp "$HOME/hydrogen_unzip/Hydrogen.app/Contents/Resources/libHydrogen.dylib" "/Applications/Roblox.app/Contents/MacOS/libHydrogen.dylib"
+  cp "$HOME/hydrogen_unzip/Hydrogen.app/Contents/Resources/MacSploit.dylib" "/Applications/Roblox.app/Contents/MacOS/MacSploit.dylib"
   cp "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer" "/Applications/Roblox.app/Contents/MacOS/.RobloxPlayer"
 
-  "$HOME/hydrogen_unzip/Hydrogen.app/Contents/Resources/insert_dylib" --strip-codesig --all-yes "/Applications/Roblox.app/Contents/MacOS/libHydrogen.dylib" "/Applications/Roblox.app/Contents/MacOS/.RobloxPlayer" "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer" >/dev/null 2>&1
+  cp "$HOME/hydrogen_unzip/Hydrogen.app/Contents/Resources/insert_dylib" --strip-codesig --all-yes "/Applications/Roblox.app/Contents/MacOS/MacSploit.dylib" "/Applications/Roblox.app/Contents/MacOS/.RobloxPlayer" "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer" >/dev/null 2>&1
   
-  cp "$HOME/hydrogen_unzip/Hydrogen.app/Contents/Resources/libHydrogenLoader.dylib" "/Applications/Roblox.app/Contents/MacOS/Roblox.app/Contents/MacOS/libHydrogenLoader.dylib"
-  "$HOME/hydrogen_unzip/Hydrogen.app/Contents/Resources/insert_dylib" --strip-codesig --all-yes "/Applications/Roblox.app/Contents/MacOS/Roblox.app/Contents/MacOS/libHydrogenLoader.dylib" "/Applications/Roblox.app/Contents/MacOS/Roblox.app/Contents/MacOS/Roblox" "/Applications/Roblox.app/Contents/MacOS/Roblox.app/Contents/MacOS/Roblox" >/dev/null 2>&1
+  cp "$HOME/hydrogen_unzip/Hydrogen.app/Contents/Resources/insert_dylib" --strip-codesig --all-yes "/Applications/Roblox.app/Contents/MacOS/Roblox.app/Contents/MacOS/Roblox" "/Applications/Roblox.app/Contents/MacOS/Roblox.app/Contents/MacOS/Roblox" >/dev/null 2>&1
 
   mv "$HOME/hydrogen_unzip/Hydrogen.app" "$hydrogen_app_path"
   chmod -R 777 "$hydrogen_app_path"
